@@ -1,1 +1,27 @@
-
+{
+    "voeux": [
+        {
+            "id": 1,
+            "nom": "Pierre",
+            "voeu": "Recevoir une tablette",
+            "date": "2025-01-01",
+            "statut": "en attente"
+        },
+        {
+            "id": 2,
+            "nom": "Marie",
+            "voeu": "Recevoir un ordinateur portable",
+            "date": "2025-01-02",
+            "statut": "traité"
+        }
+    ],
+    "echanges": [
+        {
+            "id": 1,
+            "de": "Pierre",
+            "a": "Marie",
+            "voeu": "Recevoir une tablette",
+            "statut": "accepté"
+        }
+    ]
+}
