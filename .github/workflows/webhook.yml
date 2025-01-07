@@ -1,0 +1,21 @@
+name: Webhook Handler
+
+on:
+  push:
+    branches:
+      - main  # Déclenche l'action quand tu fais un push sur la branche principale
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update Wishes (exemple)
+        run: |
+          echo "Nouvelle mise à jour des vœux" >> voeux.txt
+          git add voeux.txt
+          git commit -m "Mise à jour des vœux"
+          git push
